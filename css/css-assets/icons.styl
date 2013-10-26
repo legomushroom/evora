@@ -1,0 +1,52 @@
+// ICONS
+@import '../assets/imports.styl'
+
+
+.icon
+	rect 4*gs
+	display block
+	position relative
+
+	&:after
+		content: ''
+		rect 100%
+		position absolute
+		nw 0
+
+	svg
+		float left
+		rect 100%
+
+	&.is-hoverable
+		cursor pointer
+
+	&.is-green
+		fill c-green
+
+	&.is-blue
+		fill c-blue
+
+	&.is-red
+		fill c-red
+
+	&.is-orange
+		fill c-orange
+
+	&.is-grey2
+		fill c-grey2
+
+	&.is-grey5
+		fill c-grey5
+		// 4!
+		&.is-hoverable:hover
+			fill c-grey5-hover
+
+	&.is-white--onhover
+		&:hover
+			fill white
+			cursor pointer
+
+	&.is-orange--onhover
+		&:hover
+			fill c-orange
+			cursor pointer

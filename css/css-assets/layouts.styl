@@ -1,0 +1,137 @@
+// LAYOUTS
+@import '../assets/imports.styl'
+
+/* 00565dba44670cc78cb77f00543d1128 */
+.services-l
+	padding-left 4*gs
+	.service-b
+		float left
+		+ .service-b
+			margin-left 8*gs
+
+		&:nth-of-type(3)
+			margin-left 8.5*gs
+
+	@media all and (max-width: 940px)
+		width 54*gs
+		margin 0 auto
+		.service-b
+			float none
+			width 100%
+			+ .service-b
+				margin-left 0 
+				margin-top 7*gs
+
+	@media all and (max-width: 480px)
+		width 27*gs
+		padding-left 0
+		.service-b
+			+ .service-b
+				margin-top 4.5*gs
+
+
+		
+/* 1bfdc984293912064de0a55a2983346b */
+.footer-contacts-l
+	.text-with-icon-b
+		float left
+		&:hover
+			color c-orange
+		+ .text-with-icon-b
+			margin-left 4.5*gs + 1px
+			// &:hover
+			// 	color c-orange
+	
+	@media all and (max-width: 480px)
+		.text-with-icon-b
+			+ .text-with-icon-b
+				margin-top 4*gs - 1px
+
+
+
+/* e4f7129086a0c3e5666c9646ffb8e883 */
+.header-l
+	position absolute
+	width 100%
+	nw 0
+	z-index  10
+	
+	&.is-fixed
+		background-color rgba(c-grey1, .95)
+
+	.header-b
+		margin 0 auto
+
+/* 8a6b721df8c60443353d31664d67935e */
+.partners-l
+	.xero-logo-e
+		float left
+	.unleashed-logo-e
+		float left
+		margin-left 6*gs
+		margin-top 1.5*gs - 2px
+
+	@media all and (max-width: 640px)
+		.unleashed-logo-e
+			clear both
+			margin-top 3*gs
+			margin-left 0
+
+
+/* 43fe7726c30e852211e95dcd5ec92ff9 */
+.about-us-l
+	.about-b
+		float left
+		margin-bottom 8*gs + 1px
+		width 51%
+		&:nth-of-type(even)
+			width 49%
+
+	@media all and (max-width: 1024px)
+		.about-b
+			margin-bottom 2*gs
+			padding-right 4 *gs
+			width 48%
+			&:nth-of-type(even)
+				padding-right 4*gs
+				width 52%
+
+	@media all and (max-width: 640px)
+		width 62*gs
+		.about-b
+			float none
+			width 100%
+			margin-top 5.5*gs
+			&:nth-of-type(even)
+				width 100%
+
+	@media all and (max-width: 480px)
+		width 39.5*gs
+		margin 0 auto
+		.about-b
+			padding-right gs
+			margin-top 3.5*gs - 3px
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

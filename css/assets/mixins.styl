@@ -1,0 +1,65 @@
+gs = 8px
+br = 3px
+
+MAX_WIDTH = 128*gs
+
+retina(path, size= 100%)
+	background url(path+'.png') no-repeat center center
+	background-size size
+	@media only screen and (-webkit-min-device-pixel-ratio: 2), (min-resolution: 144dpi)
+		background url(path+'-@2x.png') no-repeat center center
+		background-size size
+
+
+nw(amount=0)
+	top 	amount
+	left 	amount
+ne(amount=0)
+	top 	amount 
+	right 	amount
+sw(amount=0)
+	bottom 	amount
+	left 	amount
+se(amount=0)
+	bottom 	amount
+	right 	amount
+
+border(width, style= solid, color= black)
+	border-width width
+	border-style style
+	border-color color
+
+bbox()
+	-webkit-box-sizing: border-box;
+	   -moz-box-sizing: border-box;
+	        box-sizing: border-box;
+
+transform(property)
+	-webkit-transform property
+	-moz-transform property
+	-ms-transform property
+	-o-transform property
+	transform property
+
+rect(size)
+	width size
+	height size
+
+min-rect(size)
+	min-width size
+	min-height size
+
+hl(color, size=1px)
+	outline size solid color
+
+textel()
+	white-space: nowrap
+	-webkit-text-overflow: ellipsis
+	-moz-text-overflow: ellipsis
+	-khtml-text-overflow: ellipsis
+	-icab-text-overflow: ellipsis
+	-o-text-overflow: ellipsis
+	text-overflow: ellipsis
+	overflow:hidden
+
+II = !important

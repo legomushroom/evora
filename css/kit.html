@@ -1,0 +1,521 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>evora</title>
+    <link rel="stylesheet" type="text/css" href="main.css">
+    <link rel="stylesheet" type="text/css" href="css-assets/kit.css">
+  </head>
+  <body><svg style="position: absolute" id="svg-source" height="0" version="1.1" xmlns="http://www.w3.org/2000/svg">
+
+  <polygon id="close-icon" points="32,2.706 29.293,0 16,13.293 2.707,0 0,2.706 13.293,16 0,29.293 2.707,32 16,18.706 29.293,32 
+    32,29.293 18.707,16   "/>
+
+  <path id="email-icon" fill-rule="evenodd" clip-rule="evenodd" d="M15.999,16L0.976,4.358c0.302-0.184,0.638-0.32,1.018-0.321l27.97-0.05
+  c0.381,0,0.714,0.135,1.02,0.318L15.999,16z M16.006,19.994L31.967,6.892L32,25.96c0.002,1.104-0.89,2.002-1.994,2.004l-27.97,0.049
+  c-1.104,0.002-2-0.892-2.002-1.996L0,6.948L16.006,19.994z"/>
+
+  <path id="phone-icon" fill-rule="evenodd" clip-rule="evenodd" d="M2.1,1.194C3.381-0.087,7.25-0.3,7.279,0.378c0.028,0.676,3.485,8.187,3.516,8.865
+  c0.03,0.678-2.278,2.986-2.954,3.662c-0.669,0.669,4.517,6.531,4.615,6.64c0.11,0.098,5.972,5.285,6.642,4.615
+  c0.674-0.676,2.982-2.986,3.658-2.953c0.68,0.027,8.189,3.484,8.867,3.516c0.676,0.027,0.463,3.898-0.818,5.18
+  c-1.094,1.094-6.764,5.066-16.623-2.031c-1.083-0.621-2.794-2.047-5.39-4.641c-0.002-0.002-0.004-0.004-0.006-0.004
+  c-0.002-0.004-0.002-0.004-0.004-0.006c-0.002-0.004-0.004-0.006-0.006-0.008c-0.002,0-0.004-0.002-0.004-0.004
+  c-2.596-2.596-4.021-4.311-4.644-5.391C-2.97,7.96,1.004,2.29,2.1,1.194z"/>
+
+  <g id="presentation-icon">
+    <path fill="none" d="M1.362,21.83h29.277V2.766H1.362V21.83z M2.043,3.787c0-0.187,0.152-0.34,0.34-0.34h27.234
+      c0.189,0,0.34,0.152,0.34,0.34v17.021c0,0.188-0.152,0.34-0.34,0.34H2.383c-0.188,0-0.341-0.151-0.34-0.34V3.787z"/>
+    <path fill="none" d="M29.277,4.127H2.724v16.34h26.553V4.127z M26.814,9.336l-6.516,6.514c-0.066,0.067-0.154,0.101-0.24,0.101
+      c-0.088,0-0.175-0.033-0.24-0.101l-3.672-3.67l-2.287,2.284c-0.067,0.067-0.154,0.101-0.241,0.101
+      c-0.088,0-0.175-0.035-0.241-0.101l-2.12-2.118l-4.279,4.279c-0.067,0.066-0.154,0.1-0.241,0.1c-0.087,0-0.175-0.033-0.241-0.1
+      c-0.133-0.133-0.133-0.35,0-0.482l4.521-4.52c0.132-0.133,0.348-0.133,0.481,0l2.119,2.119l2.286-2.286
+      c0.133-0.132,0.348-0.132,0.48,0l3.672,3.671l6.273-6.274c0.133-0.133,0.348-0.133,0.484,0.002
+      C26.947,8.987,26.947,9.203,26.814,9.336z"/>
+    <path d="M31.318,1.404H0.681C0.304,1.404,0,1.709,0,2.085v20.426c0,0.376,0.304,0.681,0.681,0.681H15.66v2.441
+      l-3.801,3.801c-0.266,0.267-0.266,0.696,0,0.963c0.133,0.133,0.307,0.199,0.481,0.199c0.174,0,0.349-0.066,0.481-0.199l3.561-3.562
+      l3.562,3.562c0.134,0.133,0.308,0.199,0.481,0.199c0.175,0,0.349-0.066,0.481-0.199c0.266-0.267,0.266-0.696,0-0.963l-3.887-3.886
+      v-2.356h14.299c0.375,0,0.681-0.305,0.681-0.681V2.085C32,1.709,31.695,1.404,31.318,1.404z M30.639,21.83H1.362V2.766h29.277
+      V21.83z"/>
+    <path d="M26.33,8.853l-6.273,6.274l-3.672-3.671c-0.133-0.132-0.348-0.132-0.48,0l-2.286,2.286l-2.119-2.119
+      c-0.133-0.133-0.349-0.133-0.481,0l-4.521,4.52c-0.133,0.133-0.133,0.35,0,0.482c0.066,0.066,0.154,0.1,0.241,0.1
+      c0.087,0,0.174-0.033,0.241-0.1l4.279-4.279l2.12,2.118c0.066,0.065,0.153,0.101,0.241,0.101c0.087,0,0.174-0.033,0.241-0.101
+      l2.287-2.284l3.672,3.67c0.065,0.067,0.152,0.101,0.24,0.101c0.086,0,0.174-0.033,0.24-0.101l6.516-6.514
+      c0.133-0.133,0.133-0.349,0-0.481C26.678,8.72,26.463,8.72,26.33,8.853z"/>
+    <path d="M2.383,21.148h27.234c0.188,0,0.34-0.151,0.34-0.34V3.787c0-0.188-0.15-0.34-0.34-0.34H2.383
+      c-0.188,0-0.34,0.153-0.34,0.34v17.021C2.042,20.997,2.195,21.148,2.383,21.148z M2.724,4.127h26.553v16.34H2.724V4.127z"/>
+  </g>
+
+  <g id="messages-icon">
+    <path fill="none" d="M6.154,22.154v4.551l4.466-4.963c0.121-0.137,0.289-0.197,0.457-0.197v-0.006h13.538V3.692H1.231v17.847h4.308
+    C5.879,21.539,6.154,21.812,6.154,22.154z M6.154,9.23h14.155c0.17,0,0.308,0.138,0.308,0.308s-0.138,0.308-0.308,0.308H6.154
+    c-0.17,0-0.308-0.138-0.308-0.308S5.984,9.23,6.154,9.23z M6.154,11.692h14.155c0.17,0,0.308,0.138,0.308,0.308
+    s-0.138,0.308-0.308,0.308H6.154c-0.17,0-0.308-0.138-0.308-0.308S5.984,11.692,6.154,11.692z M6.154,14.153h14.153
+    c0.17,0,0.309,0.139,0.309,0.308c0,0.17-0.137,0.308-0.307,0.308H6.154c-0.17,0-0.308-0.138-0.308-0.308S5.984,14.153,6.154,14.153
+    z"/>
+    <path d="M4.923,28.309c0,0.254,0.157,0.482,0.395,0.574c0.072,0.027,0.146,0.041,0.221,0.041
+      c0.171,0,0.338-0.072,0.457-0.203l5.355-5.951h14.495V2.461H0V22.77h4.923V28.309z M1.231,21.539V3.692h23.384v17.847H11.077v0.006
+      c-0.168,0-0.336,0.061-0.457,0.197l-4.466,4.963v-4.551c0-0.342-0.275-0.615-0.615-0.615H1.231z"/>
+    <path d="M6.154,9.847h14.155c0.17,0,0.308-0.138,0.308-0.308S20.479,9.23,20.309,9.23H6.154
+      c-0.17,0-0.308,0.138-0.308,0.308S5.984,9.847,6.154,9.847z"/>
+    <path d="M6.154,12.309h14.155c0.17,0,0.308-0.138,0.308-0.308s-0.138-0.308-0.308-0.308H6.154
+      c-0.17,0-0.308,0.138-0.308,0.308S5.984,12.309,6.154,12.309z"/>
+    <path d="M6.154,14.77h14.155c0.17,0,0.307-0.138,0.307-0.308c0-0.169-0.139-0.308-0.309-0.308H6.154
+      c-0.17,0-0.308,0.138-0.308,0.308S5.984,14.77,6.154,14.77z"/>
+    <path d="M32,15.38c-0.004-0.337-0.277-0.611-0.615-0.611h-3.691c-0.34,0-0.615,0.276-0.615,0.616
+      S27.354,16,27.693,16h3.076v9.23h-1.847c-0.34,0-0.614,0.275-0.614,0.615v1.52l-1.889-1.973c-0.152-0.156-0.367-0.203-0.566-0.16
+      c-0.002,0-0.004-0.002-0.008-0.002h-6.769V24c0-0.34-0.275-0.615-0.615-0.615c-0.341,0-0.616,0.275-0.616,0.615v1.846
+      c0,0.34,0.275,0.617,0.616,0.617h7.281l0.837,0.855l1.895,2.023c0.118,0.127,0.281,0.195,0.448,0.195
+      c0.076,0,0.153-0.014,0.228-0.043c0.233-0.094,0.389-0.318,0.389-0.572v-2.461h1.847c0.339,0,0.611-0.272,0.614-0.61V15.38z"/>
+  </g>
+
+  <g id="mac-icon">
+    <path d="M29.793,3.194H2.207C0.99,3.194,0,4.184,0,5.401v16c0,1.219,0.99,2.207,2.207,2.207h8.827v2.688
+    c-0.094,0.098-0.174,0.209-0.23,0.326l-1.128,2.318c-0.147,0.305-0.141,0.627,0.021,0.885c0.161,0.256,0.448,0.404,0.787,0.404
+    h11.771c0.339,0,0.626-0.148,0.786-0.404c0.161-0.258,0.169-0.58,0.021-0.885l-1.128-2.318c-0.092-0.188-0.239-0.354-0.415-0.488
+    v-2.525h8.275C31.01,23.607,32,22.619,32,21.4v-16C32,4.184,31.01,3.194,29.793,3.194z M21.924,29.125h-11.11l0.982-2.021
+    c0.04-0.082,0.203-0.186,0.296-0.186h8.552c0.093,0,0.257,0.104,0.297,0.186L21.924,29.125z M12.138,25.814v-2.207h8.276v2.207
+    H12.138z M30.896,21.4c0,0.609-0.495,1.104-1.104,1.104h-8.275H11.034H2.207c-0.608,0-1.104-0.494-1.104-1.104v-16
+    c0-0.608,0.495-1.103,1.104-1.103h27.586c0.608,0,1.104,0.495,1.104,1.103V21.4z"/>
+    <path d="M2.207,19.699h27.586V5.905H2.207V19.699z M2.759,6.457h26.482v12.689H2.759V6.457z"/>
+    <path d="M16.356,20.182c-0.501,0-0.908,0.408-0.908,0.908c0,0.502,0.407,0.91,0.908,0.91s0.908-0.408,0.908-0.91
+      C17.265,20.59,16.857,20.182,16.356,20.182z M16.356,21.447c-0.196,0-0.355-0.16-0.355-0.357s0.159-0.357,0.355-0.357
+      c0.197,0,0.356,0.16,0.356,0.357S16.554,21.447,16.356,21.447z"/>
+    <circle cx="16.529" cy="5.147" r="0.302"/>
+    <path d="M22.345,8.664H10.759c-0.456,0-0.828,0.371-0.828,0.827v1.38v0.552v4.137c0,0.457,0.372,0.828,0.828,0.828h11.586
+      c0.456,0,0.828-0.371,0.828-0.828V9.491C23.173,9.035,22.801,8.664,22.345,8.664z M22.621,15.56c0,0.152-0.124,0.277-0.276,0.277
+      H10.759c-0.151,0-0.276-0.125-0.276-0.277v-4.137h12.139V15.56z M22.621,10.871H10.482v-1.38c0-0.151,0.125-0.275,0.276-0.275
+      h11.586c0.152,0,0.276,0.124,0.276,0.275V10.871z"/>
+    <circle cx="11.342" cy="10.075" r="0.271"/>
+    <circle cx="12.445" cy="10.075" r="0.271"/>
+    <circle cx="13.549" cy="10.075" r="0.271"/>
+  </g>
+
+  <path id="instagram-icon" fill-rule="evenodd" clip-rule="evenodd" d="M25.815,0H6.183C2.774,0,0,2.773,0,6.184v6.532v13.101C0,29.227,2.774,32,6.183,32
+  h19.632C29.225,32,32,29.227,32,25.816V12.716V6.184C32,2.773,29.225,0,25.815,0z M27.59,3.688l0.705-0.003V4.39v4.719L22.89,9.127
+  l-0.018-5.423L27.59,3.688z M11.433,12.716c1.024-1.419,2.688-2.348,4.566-2.348c1.88,0,3.543,0.929,4.567,2.348
+  c0.667,0.926,1.065,2.058,1.065,3.285c0,3.105-2.527,5.63-5.633,5.63c-3.105,0-5.632-2.525-5.632-5.63
+  C10.367,14.773,10.765,13.642,11.433,12.716z M28.883,25.816c0,1.691-1.376,3.066-3.067,3.066H6.183
+  c-1.69,0-3.066-1.375-3.066-3.066V12.716h4.777C7.481,13.73,7.25,14.839,7.25,16c0,4.824,3.923,8.75,8.749,8.75
+  c4.826,0,8.75-3.926,8.75-8.75c0-1.162-0.232-2.27-0.645-3.285h4.778V25.816z"/>
+
+  <path id="facebook-icon" fill-rule="evenodd" clip-rule="evenodd" d="M23.084,10.361h-5.029v-3.32c0-1.247,0.821-1.538,1.399-1.538
+  c0.577,0,3.549,0,3.549,0V0.019L18.115,0c-5.426,0-6.662,4.089-6.662,6.707v3.654H8.315v5.65h3.138c0,7.252,0,15.989,0,15.989h6.602
+  c0,0,0-8.824,0-15.989h4.454L23.084,10.361z"/>
+
+  <path id="twitter-icon" fill-rule="evenodd" clip-rule="evenodd" d="M32,6.078c-1.177,0.522-2.443,0.875-3.771,1.033
+  c1.356-0.812,2.397-2.097,2.887-3.63c-1.268,0.752-2.673,1.299-4.169,1.593C25.749,3.797,24.043,3,22.154,3
+  c-3.625,0-6.564,2.938-6.564,6.564c0,0.514,0.058,1.015,0.17,1.495C10.303,10.786,5.466,8.173,2.227,4.202
+  C1.663,5.171,1.339,6.298,1.339,7.501c0,2.277,1.159,4.286,2.921,5.463c-1.077-0.035-2.089-0.329-2.974-0.821
+  c0,0.027,0,0.054,0,0.083c0,3.179,2.263,5.833,5.267,6.437c-0.551,0.148-1.131,0.229-1.729,0.229c-0.424,0-0.834-0.041-1.235-0.117
+  c0.835,2.607,3.26,4.506,6.132,4.559c-2.247,1.76-5.078,2.811-8.153,2.811c-0.53,0-1.053-0.033-1.566-0.094
+  C2.906,27.914,6.356,29,10.063,29c12.076,0,18.68-10,18.68-18.675c0-0.285-0.007-0.568-0.019-0.85
+  C30.006,8.551,31.119,7.394,32,6.078z"/>
+
+</svg>
+    <div class="main-kl">
+      <div class="section-kl">
+        <div class="header-ke">Colors</div>
+        <div class="cf"> 
+          <div class="color-sample-ke c-grey1-bg-gm"></div>
+          <div class="color-sample-ke c-grey2-bg-gm"></div>
+          <div class="color-sample-ke c-grey3-bg-gm"></div>
+          <div class="color-sample-ke c-grey4-bg-gm"></div>
+          <div class="color-sample-ke c-grey5-bg-gm"></div>
+          <div class="color-sample-ke c-grey6-bg-gm"></div>
+          <div class="color-sample-ke c-grey7-bg-gm"></div>
+        </div>
+        <div class="cf">
+          <div class="color-sample-ke c-blue-bg-gm"></div>
+          <div class="color-sample-ke c-green-bg-gm"></div>
+        </div>
+        <div class="cf">
+          <div class="color-sample-ke c-red-bg-gm"></div>
+          <div class="color-sample-ke c-orange-bg-gm"></div>
+        </div>
+      </div>
+      <div class="section-kl">
+        <div class="header-ke">Icons</div>
+        <div class="cf"> 
+          <div class="icon-sample-kl">
+            <div class="hash-e">16139bdc1fb5bf21a3cb1769f714013a</div>
+            <div id="" title="" class="icon ">
+              <svg viewBox="0 0 32 32">
+                <g>
+                  <use xlink:href="#email-icon"></use>
+                </g>
+              </svg>
+            </div>
+          </div>
+          <div class="icon-sample-kl">
+            <div class="hash-e">b43dcfe21eb9fd04a814670604607c08</div>
+            <div id="" title="" class="icon ">
+              <svg viewBox="0 0 32 32">
+                <g>
+                  <use xlink:href="#phone-icon"></use>
+                </g>
+              </svg>
+            </div>
+          </div>
+          <div class="icon-sample-kl">
+            <div class="hash-e">6efb48ab72c62fab8979a31152824848</div>
+            <div id="" title="" class="icon ">
+              <svg viewBox="0 0 32 32">
+                <g>
+                  <use xlink:href="#presentation-icon"></use>
+                </g>
+              </svg>
+            </div>
+          </div>
+          <div class="icon-sample-kl">
+            <div class="hash-e">9c239d042abe8fc15158bbe9d08b60f9</div>
+            <div id="" title="" class="icon ">
+              <svg viewBox="0 0 32 32">
+                <g>
+                  <use xlink:href="#messages-icon"></use>
+                </g>
+              </svg>
+            </div>
+          </div>
+          <div class="icon-sample-kl">
+            <div class="hash-e">885e9eaa7a2d671a3f4fdb95b1834dc6</div>
+            <div id="" title="" class="icon ">
+              <svg viewBox="0 0 32 32">
+                <g>
+                  <use xlink:href="#mac-icon"></use>
+                </g>
+              </svg>
+            </div>
+          </div>
+          <div class="icon-sample-kl">
+            <div class="hash-e">2228e186fc4d7d635193b88245f45323</div>
+            <div id="" title="" class="icon ">
+              <svg viewBox="0 0 32 32">
+                <g>
+                  <use xlink:href="#instagram-icon"></use>
+                </g>
+              </svg>
+            </div>
+          </div>
+          <div class="icon-sample-kl">
+            <div class="hash-e">cd0b30acb31e7b3ca2f84a848589f7f9</div>
+            <div id="" title="" class="icon ">
+              <svg viewBox="0 0 32 32">
+                <g>
+                  <use xlink:href="#facebook-icon"></use>
+                </g>
+              </svg>
+            </div>
+          </div>
+          <div class="icon-sample-kl">
+            <div class="hash-e">f0cefa31fb39d5d51c3cfdf16087add4</div>
+            <div id="" title="" class="icon ">
+              <svg viewBox="0 0 32 32">
+                <g>
+                  <use xlink:href="#twitter-icon"></use>
+                </g>
+              </svg>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="section-kl">
+        <div class="header-ke">Elements</div>
+        <div class="hash-e">1a337b2e4ebd79561043aea21a5eab16</div><a href="#">Link</a>
+        <div class="hash-e">c05e8c5950fc70a0e85f9e6eb1f5d7ed</div>
+        <div class="small-text-e">	Copyright © 2013 Evora Business Solutions Limited,  Trinidad and Tobago.</div>
+        <div class="hash-e">af7083e81ad163fc768bbf70c7ed89eb</div>
+        <div class="text-e">It doesn’t matter whether your company is a one-person startup, or one that’s been around for generations, our company is designedto make your life easier—which is why we care so much to get it done right.</div>
+        <div class="hash-e">30ed6c7f85d91fa9682ab7ccdd9ba645</div>
+        <div class="text-e is-left">It doesn’t matter whether your company is a one-person startup, or one that’s been around for generations, our company is designedto make your life easier—which is why we care so much to get it done right.</div>
+        <div class="hash-e">cf55a2bffe4d9e493e0b5e911fec8ead</div>
+        <div class="c-grey1-bg-gm p-x2-gm"><a href="mailto:hello@evorabusiness.com" class=" text-with-icon-b cf">
+            <div id="" title="" class="icon is-orange">
+              <svg viewBox="0 0 32 32">
+                <g>
+                  <use xlink:href="#email-icon"></use>
+                </g>
+              </svg>
+            </div>
+            <div class="text-be">hello@evorabusiness.com</div></a>
+        </div>
+        <div class="hash-e">88062218114eb6eb412f4d8502b5745e</div>
+        <div class="c-grey1-bg-gm p-x2-gm"><a href="tel:+1 868 222 3275" class="is-phone is-grey text-with-icon-b cf">
+            <div id="" title="" class="icon is-orange">
+              <svg viewBox="0 0 32 32">
+                <g>
+                  <use xlink:href="#phone-icon"></use>
+                </g>
+              </svg>
+            </div>
+            <div class="text-be">+1 868 222 3275</div></a>
+        </div>
+        <div class="hash-e">1bfdc984293912064de0a55a2983346b</div>
+        <div class="c-grey1-bg-gm p-x2-gm">
+          <div class="footer-contacts-l cf"><a href="mailto:hello@evorabusiness.com" class=" text-with-icon-b cf">
+              <div id="" title="" class="icon is-orange">
+                <svg viewBox="0 0 32 32">
+                  <g>
+                    <use xlink:href="#email-icon"></use>
+                  </g>
+                </svg>
+              </div>
+              <div class="text-be">hello@evorabusiness.com</div></a><a href="tel:+1 868 222 3275" class="is-phone is-grey text-with-icon-b cf">
+              <div id="" title="" class="icon is-orange">
+                <svg viewBox="0 0 32 32">
+                  <g>
+                    <use xlink:href="#phone-icon"></use>
+                  </g>
+                </svg>
+              </div>
+              <div class="text-be">+1 868 222 3275</div></a>
+          </div>
+        </div>
+        <div class="hash-e">b0427c0a8e7d165eecc3779bc5ab500d</div>
+        <div class="c-grey1-bg-gm p-x2-gm">
+          <div class="social-icons-b cf">
+            <div id="" title="" class="icon is-grey2 is-white--onhover">
+              <svg viewBox="0 0 32 32">
+                <g>
+                  <use xlink:href="#twitter-icon"></use>
+                </g>
+              </svg>
+            </div>
+            <div id="" title="" class="icon fb-bh is-grey2 is-white--onhover">
+              <svg viewBox="0 0 32 32">
+                <g>
+                  <use xlink:href="#facebook-icon"></use>
+                </g>
+              </svg>
+            </div>
+            <div id="" title="" class="icon instagram-bh is-grey2 is-white--onhover">
+              <svg viewBox="0 0 32 32">
+                <g>
+                  <use xlink:href="#instagram-icon"></use>
+                </g>
+              </svg>
+            </div>
+          </div>
+        </div>
+        <div class="hash-e">e8dcf44767bba63ed03de6691a1a44f7</div>
+        <div class="btn-b ">Learn more</div>
+        <div class="hash-e">23127e561ad37a9bbf9a5cd8c40a249d</div>
+        <div class="btn-b is-red">Learn more</div>
+        <div class="hash-e">6dbc277a05dab2bf5c045642e9bef7c4</div>
+        <div class="btn-b is-blue">Learn more</div>
+        <div class="hash-e">c94c6c09e07fccd716b5187285dc3ee8</div>
+        <div class="btn-b is-large">Let's talk!</div>
+        <div class="hash-e">48dbc4ce41f20b4ac9c8c7c610ba6dc1</div>
+        <div class="c-grey1-bg-gm p-x2-gm">
+          <div class="main-logo-e"></div>
+        </div>
+        <div class="hash-e">7ea93d88e0a98ca0b33673c3c562132f</div>
+        <div class="xero-logo-e"></div>
+        <div class="hash-e">92a77a371b54e12d27c8b7f8721e68e2</div>
+        <div class="unleashed-logo-e"></div>
+        <div class="hash-e">8a6b721df8c60443353d31664d67935e</div>
+        <div class="partners-l cf"><a target="_blank" href="http://xero.com" class="xero-logo-e"></a><a target="_blank" href="http://unleashedsoftware.com" class="unleashed-logo-e"></a></div>
+        <div class="hash-e">eaea934657e00eabd6987472cc531cc4</div>
+        <div class="header-section-b">
+          <div class="illustration-be"></div>
+        </div>
+      </div>
+      <div class="section-kl">
+        <div class="header-ke">Blocks</div>
+        <div class="hash-e">9849287c7439916756b9941f934261ca</div>
+        <div class="c-grey1-bg-gm p-x2-gm">
+          <div class="header-menu-b cf"><a class="menu-item-be is-active">Home</a><a class="menu-item-be">Services</a><a class="menu-item-be">About us</a><a class="menu-item-be">Contact us</a></div>
+        </div>
+        <div class="hash-e">1dc91129527aa66efd4713c1d468d5c5</div>
+        <div class="c-grey1-bg-gm p-x2-gm">
+          <div class="header-b cf">
+            <div class="main-logo-e"></div>
+            <div class="header-menu-b cf"><a class="menu-item-be is-active">Home</a><a class="menu-item-be">Services</a><a class="menu-item-be">About us</a><a class="menu-item-be">Contact us</a></div>
+          </div>
+        </div>
+        <div class="hash-e">e4f7129086a0c3e5666c9646ffb8e883</div>
+        <div style="position:relative" class="header-l is-fixed">
+          <div class="header-b cf">
+            <div class="main-logo-e"></div>
+            <div class="header-menu-b cf"><a class="menu-item-be is-active">Home</a><a class="menu-item-be">Services</a><a class="menu-item-be">About us</a><a class="menu-item-be">Contact us</a></div>
+          </div>
+        </div>
+        <div class="hash-e">9849287c7439916756b9941f934261ca</div>
+        <div class="service-b ">
+          <div id="" title="" class="icon is-green">
+            <svg viewBox="0 0 32 32">
+              <g>
+                <use xlink:href="#presentation-icon"></use>
+              </g>
+            </svg>
+          </div>
+          <div class="header-be bold-gm">Professional Services</div>
+          <div class="text-be">Services designed to complement your business perfectly.</div>
+          <div class="btn-b ">Learn more</div>
+        </div>
+        <div class="hash-e">3c2a2dac3b683df6f69990e68c1a176a</div>
+        <div class="service-b is-blue">
+          <div id="" title="" class="icon is-blue">
+            <svg viewBox="0 0 32 32">
+              <g>
+                <use xlink:href="#messages-icon"></use>
+              </g>
+            </svg>
+          </div>
+          <div class="header-be bold-gm">Management Consulting</div>
+          <div class="text-be">We combine our knowledge with your passion to deliver incredible results.</div>
+          <div class="btn-b is-blue">Learn more</div>
+        </div>
+        <div class="hash-e">00565dba44670cc78cb77f00543d1128</div>
+        <div class="service-b is-red">
+          <div id="" title="" class="icon is-red">
+            <svg viewBox="0 0 32 32">
+              <g>
+                <use xlink:href="#mac-icon"></use>
+              </g>
+            </svg>
+          </div>
+          <div class="header-be bold-gm">Digital Solutions</div>
+          <div class="text-be">It’s impossible to explain the magic of a great website.</div>
+          <div class="btn-b is-red">Learn more</div>
+        </div>
+        <div class="hash-e">00565dba44670cc78cb77f00543d1128</div>
+        <div class="services-l cf">
+          <div class="service-b ">
+            <div id="" title="" class="icon is-green">
+              <svg viewBox="0 0 32 32">
+                <g>
+                  <use xlink:href="#presentation-icon"></use>
+                </g>
+              </svg>
+            </div>
+            <div class="header-be bold-gm">Professional Services</div>
+            <div class="text-be">Services designed to complement your business perfectly.</div>
+            <div class="btn-b ">Learn more</div>
+          </div>
+          <div class="service-b is-blue">
+            <div id="" title="" class="icon is-blue">
+              <svg viewBox="0 0 32 32">
+                <g>
+                  <use xlink:href="#messages-icon"></use>
+                </g>
+              </svg>
+            </div>
+            <div class="header-be bold-gm">Management Consulting</div>
+            <div class="text-be">We combine our knowledge with your passion to deliver incredible results.</div>
+            <div class="btn-b is-blue">Learn more</div>
+          </div>
+          <div class="service-b is-red">
+            <div id="" title="" class="icon is-red">
+              <svg viewBox="0 0 32 32">
+                <g>
+                  <use xlink:href="#mac-icon"></use>
+                </g>
+              </svg>
+            </div>
+            <div class="header-be bold-gm">Digital Solutions</div>
+            <div class="text-be">It’s impossible to explain the magic of a great website.</div>
+            <div class="btn-b is-red">Learn more</div>
+          </div>
+        </div>
+        <div class="hash-e">d92c18c2d4c55d4e89b0ea3a05cc57a1</div>
+        <div class="about-b is-red">
+          <div class="header-bl bold-gm">
+            <div class="num-ble"> 1.</div>
+            <div class="text-ble">Great service is everything</div>
+          </div>
+          <div class="body-be">At Evora, we obsess over fast and friendly customer service. We work hard to make sure we live up to that promise every day.</div>
+        </div>
+        <div class="hash-e">43fe7726c30e852211e95dcd5ec92ff9</div>
+        <div class="about-us-l cf">
+          <div class="about-b is-red">
+            <div class="header-bl bold-gm">
+              <div class="num-ble"> 1.</div>
+              <div class="text-ble">Great service is everything</div>
+            </div>
+            <div class="body-be">At Evora, we obsess over fast and friendly customer service. We work hard to make sure we live up to that promise every day.</div>
+          </div>
+          <div class="about-b is-red">
+            <div class="header-bl bold-gm">
+              <div class="num-ble"> 1.</div>
+              <div class="text-ble">Great service is everything</div>
+            </div>
+            <div class="body-be">At Evora, we obsess over fast and friendly customer service. We work hard to make sure we live up to that promise every day.</div>
+          </div>
+          <div class="about-b is-red">
+            <div class="header-bl bold-gm">
+              <div class="num-ble"> 1.</div>
+              <div class="text-ble">Great service is everything</div>
+            </div>
+            <div class="body-be">At Evora, we obsess over fast and friendly customer service. We work hard to make sure we live up to that promise every day.</div>
+          </div>
+          <div class="about-b is-red">
+            <div class="header-bl bold-gm">
+              <div class="num-ble"> 1.</div>
+              <div class="text-ble">Great service is everything</div>
+            </div>
+            <div class="body-be">At Evora, we obsess over fast and friendly customer service. We work hard to make sure we live up to that promise every day.</div>
+          </div>
+        </div>
+        <div class="hash-e">008708f8432e188f18e65004a02d16b4</div>
+        <div class="popup-b">
+          <div id="" title="close" class="icon is-grey5 is-hoverable">
+            <svg viewBox="0 0 32 32">
+              <g>
+                <use xlink:href="#close-icon"></use>
+              </g>
+            </svg>
+          </div>
+          <div class="header-be">		Evora Professional Services</div>
+          <div class="sub-header-be">Services designed to complement your business perfectly.</div>
+          <div class="content-bl cf">
+            <div class="text-e is-left">Evora Professional Services handles all of your business and accounting services. We’ve made ourselves experts in what is usually the most mundane, but critical parts of your business. We’ve designed our processes to save you what is most important: your money and your time.</div>
+            <div class="text-e is-left">We’ve automated many “back office” tasks ranging from data entry and payroll inquiries to IT strategy. They’re designed to be convenient, trouble-free ways to transform your company’s processes without adding infrastructure, headcount, or cost.</div>
+            <div class="text-e is-left">Our team assesses your situation, implements custom solutions, and integrates the technology and processes that best meet your needs. Whether you’ve been in business for years, or you’re just getting started, we work together with your staff to give you peace of mind that your company’s day-to-day processes are running smoothly.</div>
+            <div class="text-e is-left">Our partners:</div>
+            <div class="partners-l cf"><a target="_blank" href="http://xero.com" class="xero-logo-e"></a><a target="_blank" href="http://unleashedsoftware.com" class="unleashed-logo-e"></a></div>
+            <div class="text-e is-left">We'd love to work with you.</div>
+          </div>
+          <div class="btn-b is-large">Let's talk!</div>
+        </div>
+        <div class="hash-e">c1cdef9219b8eecbff3ba94082863767</div>
+        <div class="popup-b is-center">
+          <div id="" title="close" class="icon is-grey5 is-hoverable">
+            <svg viewBox="0 0 32 32">
+              <g>
+                <use xlink:href="#close-icon"></use>
+              </g>
+            </svg>
+          </div>
+          <div class="header-be">		Management Consulting</div>
+          <div class="sub-header-be">We combine our knowledge with your passion to deliver incredible results.</div>
+          <div class="content-bl cf">
+            <div class="text-e is-left">At Evora, we understand that every single customer of ours is unique. So when things don’t work exactly as they should, we pride ourselves on being the company you turn to when you need advice from outside.</div>
+            <div class="text-e is-left">We insist on a comprehensive study of your company to get a proper grasp of what works and what doesn’t, before we propose any changes. Often the answer is straightforward, but we’re also prepared to roll up our sleeves and get dirty in order to find the root of a problem.</div>
+            <div class="text-e is-left">We work closely with you throughout the transformation process, developing creative, workable strategies and implementing them to achieve exactly what your company needs. Our work is only complete when your company and staff understand and use their new processes expertly.</div>
+            <div class="text-e is-left">We'd love to work with you.</div>
+          </div>
+          <div class="btn-b is-large is-blue">Let's talk!</div>
+        </div>
+        <div class="hash-e">f33cb11ebb4e14be67bf13e347804735</div>
+        <div class="popup-b is-right">
+          <div id="" title="close" class="icon is-grey5 is-hoverable">
+            <svg viewBox="0 0 32 32">
+              <g>
+                <use xlink:href="#close-icon"></use>
+              </g>
+            </svg>
+          </div>
+          <div class="header-be">		Digital Solutions</div>
+          <div class="sub-header-be">It’s impossible to explain the magic of a great website.</div>
+          <div class="content-bl cf">
+            <div class="text-e is-left">Digital technology should improve business results. At Evora, we help our customers ensure that it does.</div>
+            <div class="text-e is-left">Whether you’re thinking about investing in digital technology for your new business or the time has come for a change to your current setup, we research your company, staff and customers and tailor our proposed solution around them. We provide much more than just your website, though – we help your company define itself and communicate its value to the online audience.</div>
+            <div class="text-e is-left">Your online presence is an integral part of your business, so we’re committed to creating solutions that look beautiful, function seamlessly, and are designed to fit your company perfectly.</div>
+            <div class="text-e is-left">We'd love to work with you.</div>
+          </div>
+          <div class="btn-b is-large is-red">Let's talk!</div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

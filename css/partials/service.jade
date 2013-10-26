@@ -1,0 +1,7 @@
+.service-b(class="#{ className }")
+	- path = iconPath, idAttribute = '', title = '', iconClass = iconClass
+	include icon
+	.header-be.bold-gm #{headerText}
+	.text-be #{bodyText}
+	- className = btnClass, text = btnText
+	include btn

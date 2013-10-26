@@ -1,0 +1,59 @@
+.main-page-p .header-section-b {
+  padding-top: 178px;
+}
+.main-page-p .header-pe {
+  font-size: 38px;
+  color: #fff;
+  text-align: center;
+}
+.main-page-p .header-pe + .header-pe {
+  margin-top: 12px;
+}
+.main-page-p .header-text-ph {
+  max-width: 752px;
+  margin: 0 auto;
+  margin-top: 20px;
+  color: #989595;
+}
+.main-page-p .main-subsection-pl {
+  background-color: #fff;
+  max-width: 960px;
+  margin: 0 auto;
+  padding-top: 68px;
+  padding-bottom: 88px;
+}
+.main-page-p .services-l {
+  margin-top: 108px;
+  margin-bottom: 113px;
+}
+.main-page-p .second-main-subsection-ph {
+  padding-bottom: 61px;
+}
+.main-page-p .second-main-subsection-ph .subheader-pe {
+  font-size: 26px;
+  font-weight: bold;
+  text-align: center;
+  color: #53534a;
+  margin-top: 6px;
+  margin-bottom: 26px;
+}
+.main-page-p .about-us-l {
+  margin: 0 auto;
+  margin-top: 64px;
+}
+.main-page-p .last-text-ph {
+  position: relative;
+  top: -7px;
+}
+.main-page-p .footer-l {
+  text-align: center;
+  padding: 75px;
+}
+.main-page-p .footer-l .footer-contacts-l {
+  display: inline-block;
+}
+.main-page-p .footer-l .social-icons-b {
+  margin: 0 auto;
+  width: 144px;
+  margin-top: 49px;
+}

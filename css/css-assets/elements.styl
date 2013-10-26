@@ -1,0 +1,200 @@
+// ELEMENTS
+@import '../assets/imports.styl'
+
+.page-jump-e
+	position relative
+	top - 11*gs
+
+// .blinded-e
+// 	position fixed
+// 	nw 0
+// 	rect 100%
+// 	z-index: 10
+// 	display none
+// 	background rgba(0,0,0,.5)
+.line-e
+	border-top 1px solid c-grey6
+/* 48dbc4ce41f20b4ac9c8c7c610ba6dc1 */
+.main-logo-e
+	background url('img/main-logo.svg') no-repeat center center
+	background-size 100% auto
+	width 11.5*gs
+	height 3*gs
+	cursor pointer
+
+/* 92a77a371b54e12d27c8b7f8721e68e2 */
+.unleashed-logo-e
+	width 25*gs - 1px
+	height 6*gs - 2px
+	retina 'img/unleashed-logo', 100%
+	display block
+
+/* 7ea93d88e0a98ca0b33673c3c562132f */
+.xero-logo-e
+	background url('img/xero-logo.svg') no-repeat center center
+	background-size 100% auto
+	width 15.5*gs - 2px
+	display block
+	height 7.5*gs
+
+/* c05e8c5950fc70a0e85f9e6eb1f5d7ed */
+.small-text-e
+	color c-grey3
+	font-size 2*gs - 3px
+	text-align center
+
+/* af7083e81ad163fc768bbf70c7ed89eb */
+.text-e
+	color #777777
+	font-size 2*gs
+	line-height 4*gs
+	text-align center
+	
+	a
+		display inline-block
+		-webkit-backface-visibility: visible !important;
+		-webkit-animation-name: flipInY;
+		-moz-backface-visibility: visible !important;
+		-moz-animation-name: flipInY;
+		-o-backface-visibility: visible !important;
+		-o-animation-name: flipInY;
+		backface-visibility: visible !important;
+		animation-name: flipInY;
+		position relative
+		// &:after
+		// 	content ''
+		// 	position absolute
+		// 	rect 125%
+		// 	nw -12.5% 
+
+	a:hover
+		// -webkit-animation-fill-mode:both;-moz-animation-fill-mode:both;-ms-animation-fill-mode:both;-o-animation-fill-mode:both;animation-fill-mode:both;
+		-webkit-animation-duration:1s;
+		-moz-animation-duration:1s;
+		-ms-animation-duration:1s;
+		-o-animation-duration:1s;
+		animation-duration:1s;
+		// color white
+		// outline 2px solid c-orange
+		// background-color c-orange
+		// box-shadow 0 -4px 0 0 c-orange, 4px 0 0 c-orange
+		// transition all .2s ease-in
+		
+
+	@media all and (max-width: 480px)
+		font-size 2*gs - 2px
+
+/* 30ed6c7f85d91fa9682ab7ccdd9ba645 */
+.text-e, .small-text-e
+	&.is-left
+		text-align left
+	&.is-right
+		text-align right
+
+// /* e8f7ddd21782268ea812c14eaada3957 */
+// shadowSize = 2px
+
+// .input-e
+// 	display block
+// 	bbox()
+// 	border 1px solid c-grey2
+// 	border-radius br
+// 	height 4*gs
+// 	outline 0
+// 	background white
+// 	padding-left gs
+// 	padding-right gs
+// 	box-shadow shadowSize shadowSize 0 rgba(rgb(c-grey1), .2)
+// 	color c-grey1
+
+// 	&:focus
+// 		background transparent
+// 		box-shadow none
+// 		border 1px solid c-green
+
+@css{
+
+@-webkit-keyframes flipInY {
+    0% {
+        -webkit-transform: perspective(400px) rotateY(90deg);
+    }
+    
+    40% {
+        -webkit-transform: perspective(400px) rotateY(-10deg);
+    }
+    
+    70% {
+        -webkit-transform: perspective(400px) rotateY(10deg);
+    }
+    
+    100% {
+        -webkit-transform: perspective(400px) rotateY(0deg);
+    }
+}
+@-moz-keyframes flipInY {
+    0% {
+        -moz-transform: perspective(400px) rotateY(90deg);
+    }
+    
+    40% {
+        -moz-transform: perspective(400px) rotateY(-10deg);
+    }
+    
+    70% {
+        -moz-transform: perspective(400px) rotateY(10deg);
+    }
+    
+    100% {
+        -moz-transform: perspective(400px) rotateY(0deg);
+    }
+}
+@-o-keyframes flipInY {
+    0% {
+        -o-transform: perspective(400px) rotateY(90deg);
+    }
+    
+    40% {
+        -o-transform: perspective(400px) rotateY(-10deg);
+    }
+    
+    70% {
+        -o-transform: perspective(400px) rotateY(10deg);
+    }
+    
+    100% {
+        -o-transform: perspective(400px) rotateY(0deg);
+    }
+}
+@keyframes flipInY {
+    0% {
+        transform: perspective(400px) rotateY(90deg);
+    }
+    
+    40% {
+        transform: perspective(400px) rotateY(-10deg);
+    }
+    
+    70% {
+        transform: perspective(400px) rotateY(10deg);
+    }
+    
+    100% {
+        transform: perspective(400px) rotateY(0deg);
+    }
+}
+
+.flipInY {
+	-webkit-backface-visibility: visible !important;
+	-webkit-animation-name: flipInY;
+	-moz-backface-visibility: visible !important;
+	-moz-animation-name: flipInY;
+	-o-backface-visibility: visible !important;
+	-o-animation-name: flipInY;
+	backface-visibility: visible !important;
+	animation-name: flipInY;
+}
+
+}
+
+
+

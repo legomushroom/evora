@@ -1,0 +1,189 @@
+!!!5
+html
+	head
+		meta(charset='UTF-8')
+		title Evora Business Solutions - Your company's company.
+		link(rel="stylesheet", type="text/css", href="css/main.css")
+		link(href="favicon.ico", rel="icon", type="image/png")
+		meta(name="viewport", content="width=device-width, initial-scale=1.0")
+	body
+		include css/assets/icons.svg
+
+		.main-page-p
+			.header-l#js-header
+				.header-b.cf
+					.main-logo-e#js-main-logo
+					.header-menu-b.cf#js-menu
+						a(href="#home").menu-item-be.is-active Home
+						a(href="#services").menu-item-be Services
+						a(href="#about-us").menu-item-be About us
+						a(href="#contact-us").menu-item-be Contact us
+			#home.page-jump-e
+			.header-section-b#js-header-section
+				.header-pe.bold-gm We're a full-scale business services agency
+				.header-pe designed to make your life easier.
+				.text-e.header-text-ph Like you, we've had to choose between over-priced consulting firms and low quality alternatives that create more problems than they solve. Evora is a return to the essentials - great service at a great price.
+				.illustration-be
+
+			#main
+				#services.page-jump-e
+				section.main-subsection-pl.first-main-subsection-ph
+					//- .blinded-e#js-blinded-mask
+
+					.popup-b#js-green-popup
+						- path = 'close-icon', idAttribute = 'js-close', title = 'close', iconClass = 'is-grey5 is-hoverable'
+						include css/partials/icon
+						.header-be 		Evora Professional Services
+						.sub-header-be Services designed to complement your business perfectly.
+						.content-bl.cf
+								.text-e.is-left Evora Professional Services handles all of your business and accounting services. We’ve made ourselves experts in what is usually the most mundane, but critical parts of your business. We’ve designed our processes to save you what is most important: your money and your time.
+								.text-e.is-left We’ve automated many “back office” tasks ranging from data entry and payroll inquiries to IT strategy. They’re designed to be convenient, trouble-free ways to transform your company’s processes without adding infrastructure, headcount, or cost.
+								.text-e.is-left Our team assesses your situation, implements custom solutions, and integrates the technology and processes that best meet your needs. Whether you’ve been in business for years, or you’re just getting started, we work together with your staff to give you peace of mind that your company’s day-to-day processes are running smoothly.
+								.text-e.is-left Our partners:
+								include css/partials/partners
+								.text-e.is-left We'd love to work with you.
+						a(href="mailto:hello@evorabusiness.com")
+							- className = 'is-large', text = 'Let\'s talk!'
+							include css/partials/btn
+
+					.popup-b.is-center#js-blue-popup
+						- path = 'close-icon', idAttribute = 'js-close', title = 'close', iconClass = 'is-grey5 is-hoverable'
+						include css/partials/icon
+						.header-be 		Management Consulting
+						.sub-header-be We combine our knowledge with your passion to deliver incredible results.
+						.content-bl.cf
+								.text-e.is-left At Evora, we understand that every single customer of ours is unique. So when things don’t work exactly as they should, we pride ourselves on being the company you turn to when you need advice from outside.
+								.text-e.is-left We insist on a comprehensive study of your company to get a proper grasp of what works and what doesn’t, before we propose any changes. Often the answer is straightforward, but we’re also prepared to roll up our sleeves and get dirty in order to find the root of a problem.
+								.text-e.is-left We work closely with you throughout the transformation process, developing creative, workable strategies and implementing them to achieve exactly what your company needs. Our work is only complete when your company and staff understand and use their new processes expertly.
+								.text-e.is-left We'd love to work with you.
+						a(href="mailto:hello@evorabusiness.com")
+							- className = 'is-large is-blue', text = 'Let\'s talk!'
+							include css/partials/btn
+
+					.popup-b.is-right#js-red-popup
+						- path = 'close-icon', idAttribute = 'js-close', title = 'close', iconClass = 'is-grey5 is-hoverable'
+						include css/partials/icon
+						.header-be 		Digital Solutions
+						.sub-header-be It’s impossible to explain the magic of a great website.
+						.content-bl.cf
+								.text-e.is-left Digital technology should improve business results. At Evora, we help our customers ensure that it does.
+								.text-e.is-left Whether you’re thinking about investing in digital technology for your new business or the time has come for a change to your current setup, we research your company, staff and customers and tailor our proposed solution around them. We provide much more than just your website, though – we help your company define itself and communicate its value to the online audience.
+								.text-e.is-left Your online presence is an integral part of your business, so we’re committed to creating solutions that look beautiful, function seamlessly, and are designed to fit your company perfectly.
+								.text-e.is-left We'd love to work with you.
+						a(href="mailto:hello@evorabusiness.com")
+							- className = 'is-large is-red', text = 'Let\'s talk!'
+							include css/partials/btn
+					.text-e 
+						.bold-gm.i-gm.c-dark-gm Evora 
+						| was built out of respect for quality service, simple solutions, modern convenience, and most importantly, for entrepreneurs who know they shouldn’t have to overpay for great service.
+
+					.services-l.cf
+						- className = ''
+						- headerText = 'Professional Services'
+						- bodyText = 'Services designed to complement your business perfectly.'
+						- iconPath = 'presentation-icon', iconClass = 'is-green'
+						- btnClass = className + ' js-green-btn', btnText = 'Learn more'
+						include css/partials/service
+
+						- className = 'is-blue'
+						- headerText = 'Management Consulting'
+						- bodyText = 'We combine our knowledge with your passion to deliver incredible results.'
+						- iconPath = 'messages-icon', iconClass = 'is-blue'
+						- btnClass = className + ' js-blue-btn', btnText = 'Learn more'
+						include css/partials/service
+
+						- className = 'is-red'
+						- headerText = 'Digital Solutions'
+						- bodyText = 'It’s impossible to explain the magic of a great website.'
+						- iconPath = 'mac-icon', iconClass = 'is-red'
+						- btnClass = className + ' js-red-btn', btnText = 'Learn more'
+						include css/partials/service
+
+						
+
+					.text-e We provide a comprehensive range of services that your company needs to run seamlessly all under one roof. If it seems like we don’t provide what you are looking for please 
+						a(href="mailto:") email us
+						|  and we’ll surely find a way to help.
+				.line-e
+
+				#about-us.page-jump-e
+				section.main-subsection-pl.second-main-subsection-ph
+					.subheader-pe.bold-gm About us
+					.text-e Hiring someone to handle your business processes is a huge decision. We get that. So we went ahead and designed the company that we’d want to do business with. We hope you do too.
+
+					.about-us-l.cf
+						.cf
+							- num = '1'
+							- className = ''
+							- headerText = 'Great service is everything'
+							- bodyText = 'At Evora, we obsess over fast and friendly customer service. We work hard to make sure we live up to that promise every day.'
+							include css/partials/about
+
+							- num = '2'
+							- className = ''
+							- headerText = 'Usefulness is priceless'
+							- bodyText = 'We try to avoid ‘fashionable’ suggestions as much as we can. Instead, we build useful solutions that do exactly what you need and nothing you don’t.'
+							include css/partials/about
+
+						.cf
+							- num = '3'
+							- className = ''
+							- headerText = 'Attention to detail'
+							- bodyText = 'We don’t believe in “copy and paste” solutions. We examine what makes our customers unique and tailor our work around this.'
+							include css/partials/about
+
+							- num = '4'
+							- className = ''
+							- headerText = 'We work together'
+							- bodyText = 'Whether you are thinking about starting a new business or you want to make changes to an existing one, the thought of bringing in outsiders can be tricky.'
+							include css/partials/about
+
+						.cf
+
+							- num = '5'
+							- className = ''
+							- headerText = 'We’re cost effective'
+							- bodyText = 'We believe everyone is entitled to the best price we can offer. We love startups on a budget. As entrepreneurs ourselves, we know exactly what you need and we work hard to get that done.'
+							include css/partials/about
+
+							- num = '6'
+							- className = ''
+							- headerText = 'Our work is never done'
+							- bodyText = 'We don\'t love you and leave you. We build ongoing, cohesive partnerships with our customers to ensure that your company grows and stays relevant.'
+							include css/partials/about
+
+					.text-e.last-text-ph It doesn’t matter whether your company is a one-person startup, or one that’s been around for generations, our company is designed to make your life easier—which is why we care so much to get it done right.
+				#contact-us.page-jump-e
+				footer.footer-l.c-grey1-bg-gm
+					.footer-contacts-l.cf
+						- className = 'is-grey', text = 'hello@evorabusiness.com', link = 'mailto:hello@evorabusiness.com'
+						- iconPath = 'email-icon', iconClass = 'is-orange '
+						include css/partials/icon-with-text
+
+						- className = 'is-phone is-grey', text = '+1 868 222 3275', link = 'tel:+1 868 222 3275'
+						- iconPath = 'phone-icon', iconClass = 'is-orange'
+						include css/partials/icon-with-text
+
+					.social-icons-b.cf
+						a(target="_blank", href="http://twitter.com/evorabusiness").twitter-bh.icon
+							- path = 'twitter-icon', idAttribute = '', title = '', iconClass = 'is-orange--onhover twitter-bh is-grey2'
+							include css/partials/icon
+						a(target="_blank", href="http://facebook.com/evorabusiness").fb-bh.icon
+							- path = 'facebook-icon', idAttribute = '', title = '', iconClass = 'is-orange--onhover fb-bh is-grey2'
+							include css/partials/icon
+						a(target="_blank", href="http://instagram.com/evorabusiness").instagram-bh.icon
+							- path = 'instagram-icon', idAttribute = '', title = '', iconClass = 'is-orange--onhover instagram-bh is-grey2'
+							include css/partials/icon
+
+					.small-text-e.copy-ph.m-t-x7-gm	Copyright © 2013 Evora Business Solutions Limited,  Trinidad and Tobago.
+					.small-text-e.m-t-x3-gm	Your company‘s company.
+
+
+		script(type="text/javascript", src="js/lib/jquery-2.0.1.js")
+		script(type="text/javascript", src="js/lib/lodash.min.js")
+		script(type='text/javascript', src='js/lib/jquery.tap.min.js')
+		script(type="text/javascript", src="js/lib/modernizr.min.js")
+		script(type="text/javascript", src="js/lib/jquery.throttledresize.js")
+		script(type="text/javascript", src="js/main.js")
+
+

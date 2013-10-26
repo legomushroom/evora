@@ -1,0 +1,10 @@
+.main-page-p .header-l {
+  top: 6px;
+}
+.main-page-p .header-pe {
+  font-size: 26px;
+}
+.main-page-p .header-pe + .header-pe {
+  margin-top: 18px;
+  font-weight: 100;
+}

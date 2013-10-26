@@ -1,0 +1,494 @@
+// BLOCKS
+@import '../assets/imports.styl'
+
+/* eaea934657e00eabd6987472cc531cc4 */
+.header-section-b
+	height 87.5*gs
+	background-color c-grey1
+	position relative
+
+	> .illustration-be
+		background url('img/illustration.svg') repeat-x left bottom
+		// background-size 100% auto
+		opacity .1
+		position absolute
+		width 100%
+		height 38*gs
+		bottom gs
+		left 0
+
+	@media all and (max-width: 1024px)
+		padding-top 15.5*gs - 2px
+		height 75*gs
+		> .illustration-be
+			background-position: 52.5% bottom
+
+		.text-e
+			line-height 3.5*gs
+
+	@media all and (max-width: 480px)
+		height 60*gs
+
+		> .illustration-be
+			opacity .04
+
+
+/* 1dc91129527aa66efd4713c1d468d5c5 */
+.header-b
+	height 11*gs
+	padding 4*gs - 1px 4*gs
+	max-width MAX_WIDTH
+	.main-logo-e
+		float left
+	.header-menu-b
+		margin-top (gs/2) + 2px
+		float right
+
+	@media all and (max-width: 1024px)
+		padding 4*gs - 1px 6.5*gs 
+		padding-left 6.5*gs - 1px
+		.header-menu-b
+			margin-top gs + 1px
+
+	@media all and (max-width: 640px)
+		padding 4*gs - 1px 5*gs 
+		padding-left 5*gs - 1px
+		.header-menu-b
+			margin-top gs + 1px
+
+		.is-fixed &
+			.header-menu-b
+				margin-top gs - 2px
+
+	
+	@media all and (max-width: 600px)
+		padding 4*gs + 1px 0
+		text-align center
+		.main-logo-e
+			margin 0 auto
+			float none
+		.header-menu-b
+			float none
+			display inline-block
+			margin-top 4*gs + 2px
+
+		.is-fixed &
+			height 8*gs
+			padding-top 2.5*gs
+			.main-logo-e
+				display none
+			.header-menu-b
+				margin-top gs - 2px
+
+
+
+
+
+/* 9849287c7439916756b9941f934261ca */
+.header-menu-b
+	> .menu-item-be
+		color c-grey3
+		float left
+		font-size 2*gs
+		cursor pointer
+		text-align left
+		+ .menu-item-be
+			margin-left 5*gs + 2px
+
+		&.is-active
+			cursor default
+		&.is-active
+			color white
+
+		&:not(.is-active):hover
+			color c-orange
+
+	@media all and (max-width: 1024px)
+		> .menu-item-be
+			+ .menu-item-be
+				margin-left 6*gs - 2px
+
+	@media all and (max-width: 640px)
+		> .menu-item-be
+			+ .menu-item-be
+				margin-left 6*gs - 2px
+
+	@media all and (max-width: 480px)
+		> .menu-item-be
+			font-size 2*gs - 1px
+			+ .menu-item-be
+				margin-left 3.5*gs
+
+	@media all and (max-width: 340px)
+		> .menu-item-be
+			+ .menu-item-be
+				margin-left 2*gs + 2px
+
+/* 008708f8432e188f18e65004a02d16b4 */
+arrowSize = 2*gs - 1px
+.popup-b
+	background-color c-grey7
+	position relative
+	padding (5.5*gs - 1px) (6*gs + 1px)
+	padding-bottom 6.5*gs - 2px
+	width 100%
+
+	/* f33cb11ebb4e14be67bf13e347804735 */
+	&.is-right
+		&:after
+			left 100%
+			margin-left - arrowSize - (19.5*gs)
+		> .header-be
+			color c-red
+
+	/* c1cdef9219b8eecbff3ba94082863767 */
+	&.is-center
+		&:after
+			left 50%
+			margin-left - arrowSize
+		> .header-be
+			color c-blue
+		
+
+	&:after
+		content ''
+		position absolute
+		top  - 2*arrowSize
+		left 18*gs + 2px
+		rect 0
+		border arrowSize  solid transparent
+		border-bottom-color c-grey7
+
+	> .header-be
+		color c-green
+		font-size 4*gs - 2px
+		font-weight bold
+		padding-right 4*gs
+
+	> .sub-header-be
+		color #777
+		font-size 2.5*gs
+		margin-top 1.5*gs + 1px
+		margin-bottom 4*gs + 1px
+		line-height 3*gs
+		margin-top gs + 3px
+		margin-bottom 3*gs + 3px
+
+
+	.text-e
+		+ .text-e
+			margin-top 3.5*gs - 2px
+
+	.icon
+		position absolute
+		rect 2*gs
+		top 6*gs + 1px
+		right 6*gs + 3px
+
+	.btn-b
+		margin-top 2.5*gs - 2px
+
+	.partners-l
+		margin-top 2*gs + 1px
+		margin-bottom 5*gs - 2px
+
+	@media all and (max-width: 940px)
+		width 80%
+		margin-left 10%
+		margin-top -5*gs
+		
+		&.is-right, &.is-center, &
+			&:after
+				left 50%
+				margin-left - arrowSize
+
+	@media all and (max-width: 590px)
+		.partners-l
+			margin-bottom 4*gs
+			> div
+				clear both
+				margin-left 0
+
+
+	@media all and (max-width: 480px)
+		margin-top -5*gs
+		> .header-be
+			font-size 3.5*gs
+		> .sub-header-be
+			font-size 2.5*gs
+		&.is-right, &.is-center, &
+			&:after
+				left 25%
+				margin-left arrowSize
+
+
+/* b0427c0a8e7d165eecc3779bc5ab500d */
+.social-icons-b
+	> a
+		display block
+		float left
+		rect 4*gs - 3px
+		+ a
+			margin-left 4*gs - 2px
+
+		&:hover
+			.icon
+				fill c-orange
+
+	// .twitter-bh
+	// 	&:hover
+	// 		fill #00acee
+	// 		cursor: pointer
+
+	.fb-bh
+		rect 3*gs - 1px
+		margin-top 3px
+		// &:hover
+		// 	fill #3b5998
+		// 	cursor: pointer
+
+	.instagram-bh
+		rect 3*gs - 1px
+		margin-top 3px
+		// &:hover
+		// 	fill #3f729b
+		// 	cursor: pointer
+
+/* cf55a2bffe4d9e493e0b5e911fec8ead */
+.text-with-icon-b
+	color c-grey5
+
+	/* 88062218114eb6eb412f4d8502b5745e */
+	&.is-grey
+		color c-grey3
+	
+	/* 88062218114eb6eb412f4d8502b5745e */
+	&.is-phone
+		> .text-be
+			margin-left 3*gs
+		.icon
+			rect 2*gs - 1px
+
+	.icon
+		float left
+		rect 2*gs
+
+	> .text-be
+		margin-left 3.5*gs - 2px
+		margin-top 1px
+		font-size 2*gs + 2px
+		display block
+
+/* d92c18c2d4c55d4e89b0ea3a05cc57a1 */
+.about-b
+	padding-right 12*gs
+	> .header-bl
+		font-size 2.5*gs
+		color 	#5c5b54
+		> .num-ble
+			color c-orange
+			display inline
+			padding-right gs - 2px
+		> .text-ble
+			display inline
+
+	> .body-be
+		font-size 2*gs
+		line-height 3.5*gs
+		color #777
+		padding-left 3*gs
+		margin-top 1.5*gs + 2px
+
+	@media all and (max-width: 1024px)
+		> .body-be
+			margin-top 1.5*gs + 1px
+			font-size 1.5*gs + 2px		
+	
+	@media all and (max-width: 480px)
+		> .header-bl
+			font-size 2*gs
+
+		>  .body-be
+			margin-top gs + 1px
+			line-height 3.5*gs
+			font-size 2*gs - 2px
+
+
+
+
+
+
+
+/* 9849287c7439916756b9941f934261ca */
+.service-b
+	width 32*gs
+	text-align center
+
+	/* 3c2a2dac3b683df6f69990e68c1a176a */
+	&.is-blue
+		> .header-be
+			color c-blue
+			margin-top 4.5*gs
+		> .text-be
+			margin-top 2*gs
+
+		.icon
+			margin-top - (gs/2) - 1px
+	
+	/* 00565dba44670cc78cb77f00543d1128 */
+	&.is-red
+		> .header-be
+			color c-red
+			margin-top 4*gs - 1px
+		> .text-be
+			margin-top 2*gs 
+			padding 0 2*gs
+
+		.icon
+			rect 11*gs - 1px
+			margin-top - 3px
+
+	> .header-be
+		color c-green
+		font-size 2*gs + 2px
+		margin-top 4*gs - 1px
+	> .text-be
+		color #777777
+		font-size 2*gs
+		line-height 3*gs
+		margin-top 2*gs
+	.icon
+		rect 10.5*gs
+		margin 0 auto
+	.btn-b
+		margin-top 2.5*gs
+
+	@media all and (max-width: 940px)
+		text-align left
+		overflow hidden
+
+		> .text-be, > .header-be
+			margin-left 15.5*gs
+
+		> .header-be
+			margin-top gs
+
+		> .text-be
+			margin-top gs - 1px
+
+		.btn-b
+			float left
+			margin-top 1.5*gs
+			margin-left 5*gs
+
+		.icon
+			float left
+			text-align left
+			margin-top 3*gs - 1px
+
+		/* 3c2a2dac3b683df6f69990e68c1a176a */
+		&.is-blue
+			> .header-be, > .text-be
+				margin-top 0
+
+			> .text-be
+				margin-top gs - 1px
+
+			.icon
+				margin-top 2*gs - 3px
+
+		/* 00565dba44670cc78cb77f00543d1128 */
+		&.is-red
+			> .header-be, > .text-be
+				margin-top 0
+			> .text-be
+				margin-top gs - 2px
+				margin-left 13.5*gs 
+			> .header-be
+				margin-left 15*gs + 3px
+			.btn-b
+				margin-left 4.5*gs + 2px
+				margin-top 2*gs - 3px
+			.icon
+				margin-top gs + 3px
+
+	@media all and (max-width: 480px)
+		&, &.is-red, &.is-blue
+			.icon
+				display none
+
+			> .text-be, > .header-be, .btn-b
+				margin-left 0
+			
+			> .header-be
+				font-size 2*gs
+			> .text-be
+				font-size 2*gs - 2px
+				padding-left 0
+			.btn-b
+				margin-top 2*gs - 3px
+				margin-left 1px
+
+
+
+shadowSize = 2px
+/* caa0608fbfea0f959bf1ce698d2327e6 */
+.input-with-icon-b
+	position relative
+	display inline-block
+
+	.input-e
+		padding-left 5*gs
+		float left
+
+		&:focus + .icon
+			fill c-green
+
+	.icon
+		position absolute
+		left 	gs + 4
+		top 	gs - 2
+		rect 	2.5*gs
+
+	
+
+shadowSize = 2px
+/* e8dcf44767bba63ed03de6691a1a44f7 */
+.btn-b
+	btnHeight = 4.5*gs
+	background c-green
+	height 		btnHeight
+	line-height btnHeight + (gs/2)
+	font-size 14px
+	text-shadow 0 1px 1px rgba(0,0,0,.25)
+
+	display: inline-block
+	padding 0 (2.5*gs)
+	color white
+	cursor pointer
+
+	&:hover
+		background c-green-hover
+	/* 23127e561ad37a9bbf9a5cd8c40a249d */
+	&.is-red
+		background-color c-red
+		&:hover
+			background c-red-hover
+	/* 6dbc277a05dab2bf5c045642e9bef7c4 */
+	&.is-blue
+		background-color c-blue
+		&:hover
+			background c-blue-hover
+	
+	/* c94c6c09e07fccd716b5187285dc3ee8 */
+	largeBtnHeight = btnHeight + gs + 2px
+	&.is-large
+		height largeBtnHeight
+		line-height largeBtnHeight + (gs/2)
+		font-size 2*gs + 2px
+		padding 0 (3*gs + 3px)
+
+
+
+
+
