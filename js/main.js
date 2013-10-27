@@ -61,16 +61,16 @@
       var _this = this;
 
       this.$greenBtn.on(this.CLICK_EVENT, function(e) {
-        _this.showPopup(_this.$greenPopup, e);
-        return e.stopPropagation();
+        e.stopPropagation();
+        return _this.showPopup(_this.$greenPopup, e);
       });
       this.$blueBtn.on(this.CLICK_EVENT, function(e) {
-        _this.showPopup(_this.$bluePopup, e);
-        return e.stopPropagation();
+        e.stopPropagation();
+        return _this.showPopup(_this.$bluePopup, e);
       });
       this.$redBtn.on(this.CLICK_EVENT, function(e) {
-        _this.showPopup(_this.$redPopup, e);
-        return e.stopPropagation();
+        e.stopPropagation();
+        return _this.showPopup(_this.$redPopup, e);
       });
       this.$window.on('throttledresize', _.bind(this.positPopup, this));
       return this.$mainLogo.on(this.CLICK_EVENT, function(e) {
@@ -84,9 +84,12 @@
     };
 
     Main.prototype.showPopup = function($popup, e) {
-      var $target,
+      var $target, _ref,
         _this = this;
 
+      if ((_ref = this.$currentPopup) != null) {
+        _ref.hide();
+      }
       $target = $(e.target);
       this.$currentPopup = $popup.fadeIn();
       this.$currentPopup.data({
@@ -121,12 +124,16 @@
       });
     };
 
-    Main.prototype.hidePopup = function() {
-      var _this = this;
+    Main.prototype.hidePopup = function(speed) {
+      var _ref,
+        _this = this;
 
-      return this.$currentPopup.fadeOut('fast', function() {
+      if (speed == null) {
+        speed = 'fast';
+      }
+      return (_ref = this.$currentPopup) != null ? _ref.fadeOut(speed, function() {
         return _this.$currentPopup = null;
-      });
+      }) : void 0;
     };
 
     Main.prototype.listenToScroll = function() {

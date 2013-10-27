@@ -2,7 +2,7 @@
     font-family: 'MyriadProSemibold';
     src: url('css-assets/font/myriadpro-semibold.eot');
     src: url('css-assets/font/myriadpro-semibold.eot') format('embedded-opentype'),
+    	 url('css-assets/font/myriadpro-semibold.svg#MyriadProSemibold') format('svg'),
          url('css-assets/font/myriadpro-semibold.woff') format('woff'),
-         url('css-assets/font/myriadpro-semibold.ttf') format('truetype'),
-         url('css-assets/font/myriadpro-semibold.svg#MyriadProSemibold') format('svg');
+         url('css-assets/font/myriadpro-semibold.ttf') format('truetype');
 }

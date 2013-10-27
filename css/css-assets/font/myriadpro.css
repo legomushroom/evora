@@ -2,7 +2,7 @@
     font-family: 'MyriadWebProRegular';
     src: url('css-assets/font/myriad-web-pro.eot');
     src: url('css-assets/font/myriad-web-pro.eot') format('embedded-opentype'),
+    	 url('css-assets/font/myriad-web-pro.svg#MyriadWebProRegular') format('svg'),
          url('css-assets/font/myriad-web-pro.woff') format('woff'),
-         url('css-assets/font/myriad-web-pro.ttf') format('truetype'),
-         url('css-assets/font/myriad-web-pro.svg#MyriadWebProRegular') format('svg');
+         url('css-assets/font/myriad-web-pro.ttf') format('truetype');
 }

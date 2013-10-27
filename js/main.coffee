@@ -53,15 +53,16 @@ class Main
 				'opacity': 1
 
 	listenToPopups:->
-		@$greenBtn.on 	@CLICK_EVENT, (e)=> @showPopup @$greenPopup, e; e.stopPropagation()
-		@$blueBtn.on 	@CLICK_EVENT, (e)=> @showPopup @$bluePopup, e; 	e.stopPropagation()
-		@$redBtn.on 	@CLICK_EVENT, (e)=> @showPopup @$redPopup, e; 	e.stopPropagation()
+		@$greenBtn.on 	@CLICK_EVENT, (e)=> e.stopPropagation(); @showPopup @$greenPopup, e;   
+		@$blueBtn.on 	@CLICK_EVENT, (e)=> e.stopPropagation(); @showPopup @$bluePopup, e; 
+		@$redBtn.on 	@CLICK_EVENT, (e)=> e.stopPropagation(); @showPopup @$redPopup, e; 
 		# @$mask.on 		@CLICK_EVENT, _.bind @hidePopup, @
 		@$window.on 'throttledresize', _.bind @positPopup, @
 		@$mainLogo.on @CLICK_EVENT, (e)=> e.stopPropagation(); e.preventDefault(); @$bodyHtml.animate {'scrollTop': 0}, 750 ; return false
 
 	showPopup:($popup, e)->
 		# @$mask.show()
+		@$currentPopup?.hide()
 		$target = $(e.target)
 		@$currentPopup = $popup.fadeIn()
 		@$currentPopup.data '$target': $target
@@ -77,9 +78,9 @@ class Main
 		@$currentPopup.css
 			top: $target.position().top + 2*$target.outerHeight() + @POPUP_OFFSET
 
-	hidePopup:->
+	hidePopup:(speed='fast')->
 		# @$mask.fadeOut('fast');
-		@$currentPopup.fadeOut('fast', => @$currentPopup = null)
+		@$currentPopup?.fadeOut(speed, => @$currentPopup = null)
 
 
 	listenToScroll:->
