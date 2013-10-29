@@ -25,6 +25,7 @@
       this.$greenPopup = $('#js-green-popup');
       this.$bluePopup = $('#js-blue-popup');
       this.$redPopup = $('#js-red-popup');
+      this.$popupSpacer = $('#js-popup-spacer');
       this.servicesAnimated = [];
       this.aboutsAnimated = [];
       this.listenToScroll();
@@ -107,8 +108,11 @@
           return e.stopPropagation();
         });
       }
-      return this.$bodyHtml.animate({
+      this.$bodyHtml.animate({
         'scrollTop': $popup.offset().top - this.POPUP_OFFSET - this.POPUP_HEADER_OFFSET
+      });
+      return this.$popupSpacer.css({
+        'height': $popup.outerHeight()
       });
     };
 
@@ -131,9 +135,15 @@
       if (speed == null) {
         speed = 'fast';
       }
-      return (_ref = this.$currentPopup) != null ? _ref.fadeOut(speed, function() {
-        return _this.$currentPopup = null;
-      }) : void 0;
+      if ((_ref = this.$currentPopup) != null) {
+        _ref.fadeOut(speed, function() {
+          _this.$currentPopup = null;
+          return _this.$window.trigger('scroll');
+        });
+      }
+      return this.$popupSpacer.css({
+        'height': 0
+      });
     };
 
     Main.prototype.listenToScroll = function() {

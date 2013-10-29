@@ -25,6 +25,8 @@ class Main
 		@$bluePopup 	= $('#js-blue-popup')
 		@$redPopup 		= $('#js-red-popup')
 
+		@$popupSpacer 	= $('#js-popup-spacer')
+
 		@servicesAnimated = []
 		@aboutsAnimated	  = []
 
@@ -71,6 +73,7 @@ class Main
 			$popup.find('#js-close').on @CLICK_EVENT, =>  $popup.data('closeHandler': true); @hidePopup()
 			$popup.on @CLICK_EVENT, (e)=> e.stopPropagation()
 		@$bodyHtml.animate 'scrollTop': $popup.offset().top - @POPUP_OFFSET	- @POPUP_HEADER_OFFSET
+		@$popupSpacer.css 'height': $popup.outerHeight()
 
 	positPopup:->
 		if !@$currentPopup then return
@@ -80,7 +83,8 @@ class Main
 
 	hidePopup:(speed='fast')->
 		# @$mask.fadeOut('fast');
-		@$currentPopup?.fadeOut(speed, => @$currentPopup = null)
+		@$currentPopup?.fadeOut(speed, => @$currentPopup = null; @$window.trigger 'scroll')
+		@$popupSpacer.css 'height': 0
 
 
 	listenToScroll:->
