@@ -34,7 +34,7 @@ class Main
 		@listenToScroll()
 		@listenToPopups()
 		@listenMenu()
-		@$body.on @CLICK_EVENT, =>  @hidePopup()
+		@$body.on @CLICK_EVENT, => @hidePopup()
 
 		@normalHeader =
 			animate:
@@ -60,7 +60,7 @@ class Main
 		@$redBtn.on 	@CLICK_EVENT, (e)=> e.stopPropagation(); @showPopup @$redPopup, e; 
 		# @$mask.on 		@CLICK_EVENT, _.bind @hidePopup, @
 		@$window.on 'throttledresize', _.bind @positPopup, @
-		@$mainLogo.on @CLICK_EVENT, (e)=> e.stopPropagation(); e.preventDefault(); @$bodyHtml.animate {'scrollTop': 0}, 750 ; return false
+		@$mainLogo.on @CLICK_EVENT, (e)=>@$bodyHtml.animate {'scrollTop': 0}, 750 ; return false
 
 	showPopup:($popup, e)->
 		# @$mask.show()
@@ -95,6 +95,7 @@ class Main
 
 	listenMenu:->
 		@$menu.on 'click', 'a', (e)=>
+			@hidePopup()
 			e.preventDefault()
 			@scrollToSection $(e.target).attr 'href'
 			

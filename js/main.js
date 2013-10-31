@@ -75,8 +75,6 @@
       });
       this.$window.on('throttledresize', _.bind(this.positPopup, this));
       return this.$mainLogo.on(this.CLICK_EVENT, function(e) {
-        e.stopPropagation();
-        e.preventDefault();
         _this.$bodyHtml.animate({
           'scrollTop': 0
         }, 750);
@@ -156,6 +154,7 @@
       var _this = this;
 
       return this.$menu.on('click', 'a', function(e) {
+        _this.hidePopup();
         e.preventDefault();
         return _this.scrollToSection($(e.target).attr('href'));
       });
